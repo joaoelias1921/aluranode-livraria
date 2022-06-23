@@ -1,0 +1,35 @@
+## Portuguese (Brazil)
+Siga os passos abaixo para recriação no seu MongoDB:
+
+1. Na pasta atual (/src/config), crie um arquivo chamado "dbConnect.js";
+2. Cole nele o seguinte código:
+
+    import mongoose from "mongoose";
+
+    mongoose.connect("mongodb+srv://<SEU-USUARIO-MONGODB>:<SUA-SENHA-MONGODB>@aluranode.feisy.mongodb.net/<NOME-BANCO-MONGODB>");
+
+    let db = mongoose.connection;
+
+    export default db;
+
+3. Em mongoose.connect, altere os campos "<SEU-USUARIO-MONGODB>", "<SUA-SENHA-MONGODB>" e "<NOME-BANCO-MONGODB>" para corresponder as suas informações do MongoDB!
+4. Certifique-se de instalar ou possuir as dependências Express e Mongoose, ambas acessíveis via NPM!
+5. Rode a API por meio do comando "npm run dev".
+
+## English
+Follow the steps below in order to recreate this project in your MongoDB account:
+
+1. In this folder (/src/config), create a new file called "dbConnect.js";
+2. Open "dbConnect.js" and paste the code below:
+
+    import mongoose from "mongoose";
+
+    mongoose.connect("mongodb+srv://<YOUR-MONGODB-USER>:<YOUR-MONGODB-PASSWORD>@aluranode.feisy.mongodb.net/<MONGODB-DATABASE-NAME>");
+
+    let db = mongoose.connection;
+
+    export default db;
+
+3. Over at "mongoose.connect", change "<YOUR-MONGODB-USER>", "<YOUR-MONGODB-PASSWORD>" and "<MONGODB-DATABASE-NAME>" so that they match your MongoDB info!
+4. Make sure to install both Express and Mongoose dependencies, accessible via NPM!
+5. Run the project with "npm run dev".
